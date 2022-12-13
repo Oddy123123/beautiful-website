@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head></head>
-<body>
-    <h1>Beautiful website</h1>
-    <p>This is a beautiful website. It's very beautiful!</p>
-    <hr>
-    <p>Click on the following link to <a href="https://www.google.com/">visit Google</a></p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add icon link -->
+    <link
+      rel="icon"
+      href="https://thumbs.dreamstime.com/b/colorful-art-tree-beautiful-icon-logo-vector-isolated-white-background-illustration-different-flowers-eps-file-available-92660715.jpg"
+      type="image/x-icon"
+    />
+    <title>Beautiful</title>
+    <!-- css & font link -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        background-image: url("https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000");
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        font-family: "Roboto Mono";
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+
+      div {
+        position: absolute;
+        margin: -68px 0 0 -47px;
+        top: 20%;
+        left: 16%;
+        width: 751px;
+        height: 443px;
+        background: #f6f2e9;
+        border-radius: 25px;
+        box-shadow: 5px 5px #31302c;
+        border: 2px solid #31302c;
+      }
+
+      div:first-child {
+        padding-left: 2%;
+      }
+
+      h1 {
+        color: #01a6ff;
+      }
+      div a {
+        color: black;
+        font-weight: bolder;
+        text-decoration: none;
+        background-image: linear-gradient(90deg, #c8b2d1, #c8b2d1);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+        transition: background-size 0.3s ease;
+      }
+      div a:hover {
+        background-size: 100% 25px;
+        transition: background-size 0.3s ease;
+      }
+    </style>
+    <script>
+      var i = 0;
+      var txt = "Beautiful website"; /* The text */
+      var speed = 150; /* The speed/duration of the effect in milliseconds */
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("effect").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+  </head>
+
+  <body onload="typeWriter()">
+    <div>
+      <h1 id="effect"></h1>
+      <p>This is a beautiful website. It's very beautiful!</p>
+      <hr />
+      <p>
+        Click on the following link to
+        <a href="https://www.google.com/">visit Google</a>
+      </p>
+    </div>
+  </body>
 </html>
