@@ -2,5 +2,6 @@
 1. Fork this repo
 2. Make some change
 2. Create a new commit
+my name is mina lotfy ebeed 
 3. Create a pull request
 4. Fill [this form](https://forms.gle/sMmHbntYdvfdRiWJ6)
